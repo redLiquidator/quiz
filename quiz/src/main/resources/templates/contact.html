@@ -23,10 +23,7 @@
     color: #111;
   }
   .container {
-    padding: 80px 120px 20px 120px;
-  }
-  .container2 {
-    padding: 0px 120px;
+    padding: 80px 120px;
   }
   .person {
     border: 10px solid transparent;
@@ -52,7 +49,6 @@
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
   }
-    
   .bg-1 {
     background: #2d2d30;
     color: #bdbdbd;
@@ -159,9 +155,7 @@
   </style>
   
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"  class="bg-1">
-	<!-- head(top right): login, user id, user money
-	quiz list(middle) -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 	<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -177,7 +171,7 @@
         <li><a href="/#">Hello, player1988 | 2100 points</a></li>
         <li><a href="/quiz">Quiz</a></li>
         <li><a href="/login">Login</a></li>
-        <li><a href="/MyAccount">My Account</a></li>
+        <li><a href="/myAccount">My account</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
@@ -185,22 +179,39 @@
   </div>
 </nav>
 
-<!--label-default  label-primary  label-success  label-info  label-warning  label-danger-->
-<!-- embryo | African Elephant(Average 70 years)  | Nile -->
-  <div class="container" >
-   <h3 class="text-center">QUIZ EVENT </h3>  
-    <p class="text-center">* Answer quiz questions and get points. <br> * Quizzes are updated and discarded periodically. <br> * You are given only 3 chances to answer each question.</p>
-  </div>  
-    <div class="container2" > 
-    <ul class="list-group">
-      <li class="list-group-item">What's the name of the group of cells that will become a baby? <span class="label label-info">1 day left</span><span class="badge">600 points</span></li>
-      <li class="list-group-item">Which animal lives longest? <span class="label label-primary">new</span><span class="badge">500 points</span></li> 
-      <li class="list-group-item">What is the longest river that flows through Egypt?  <span class="label label-danger">Multiple-choice</span> <span class="badge">700 points | 1 trial left</span></li> 
-    </ul>
-      </div>
-<script>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact the creator</h3>
+  <p class="text-center"><em></em></p>
 
+  <div class="row">
+    <div class="col-md-4">
+      <p>Red Liquidator</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Seoul, South Korea</p>
+      <!-- <p><span class="glyphicon glyphicon-phone"></span>Phone: +82 1515151515</p> -->
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: summersoftsky@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
 </script>
-<!-- access index file | http://localhost:8180/  -->
 </body>
 </html>

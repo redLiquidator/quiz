@@ -23,10 +23,7 @@
     color: #111;
   }
   .container {
-    padding: 80px 120px 20px 120px;
-  }
-  .container2 {
-    padding: 0px 120px;
+    padding: 80px 120px;
   }
   .person {
     border: 10px solid transparent;
@@ -159,7 +156,7 @@
   </style>
   
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"  class="bg-1">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- head(top right): login, user id, user money
 	quiz list(middle) -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -185,22 +182,33 @@
   </div>
 </nav>
 
-<!--label-default  label-primary  label-success  label-info  label-warning  label-danger-->
-<!-- embryo | African Elephant(Average 70 years)  | Nile -->
-  <div class="container" >
-   <h3 class="text-center">QUIZ EVENT </h3>  
-    <p class="text-center">* Answer quiz questions and get points. <br> * Quizzes are updated and discarded periodically. <br> * You are given only 3 chances to answer each question.</p>
-  </div>  
-    <div class="container2" > 
-    <ul class="list-group">
-      <li class="list-group-item">What's the name of the group of cells that will become a baby? <span class="label label-info">1 day left</span><span class="badge">600 points</span></li>
-      <li class="list-group-item">Which animal lives longest? <span class="label label-primary">new</span><span class="badge">500 points</span></li> 
-      <li class="list-group-item">What is the longest river that flows through Egypt?  <span class="label label-danger">Multiple-choice</span> <span class="badge">700 points | 1 trial left</span></li> 
-    </ul>
-      </div>
-<script>
+   <!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Login</h3>
+  <p class="text-center"><em></em></p>
 
+  <div class="row">
+    
+   <form role="form">
+            <div class="form-group">
+             <!--  <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> ID</label> -->
+              <label for="psw"><span class="glyphicon glyphicon-user"></span> ID</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter your ID">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Password</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter your password">
+            </div>
+              <button type="submit" class="btn btn-block">Login 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+  
+  </div>
+</div>
+             
+<script>
 </script>
-<!-- access index file | http://localhost:8180/  -->
+<!-- access index file | http://localhost:8080/  -->
 </body>
 </html>
