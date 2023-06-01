@@ -6,8 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.service.QuizService;
-
 @Controller
 public class QuizController{
 	
@@ -20,8 +18,8 @@ public class QuizController{
 	      
 	      logger.info("+++++++++++quiz++++++++++++");
 	      
-	      QuizService quizService = new QuizService ();
-	      quizService.getQuizList();
+	      //QuizService quizService = new QuizService ();
+	     // quizService.getQuizList();
 	    
 	      return mv;
 	}
