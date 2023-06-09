@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.Arrays;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +23,12 @@ public class QuizController{
 	public ModelAndView quiz() {
 		//assign quiz.html file to mv
 	      ModelAndView mv = new ModelAndView("quiz.html");
-	       
-	      //System.out.println(quizService.SelectQuizList());
+	             
 	      logger.info("+++++++++++quiz++++++++++++");
 	      
-	      
-	      //QuizService quizService = new QuizService ();
-	     // quizService.getQuizList();
-	    
+	      quizService.SelectQuizList();
+	      System.out.println(Arrays.toString(quizService.SelectQuizList().toArray()));
+	      System.out.println(quizService.SelectFromDual());
 	      return mv;
 	}
 }

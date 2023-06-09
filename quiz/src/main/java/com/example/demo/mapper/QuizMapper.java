@@ -10,4 +10,5 @@ import com.example.demo.model.Quiz;
 public interface QuizMapper{
 	//@Select("Select * from quiz")
 	public List<Quiz> SelectQuizList();
+	public int SelectFromDual();
 }
