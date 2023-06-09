@@ -3,8 +3,8 @@ marketplace > thymeleaf
 marketplace > mybatis 
 
 2.database
-mysql 5.5 | dbeaver community
-user quiz | password 1234
+mysql | aws rds
+user admin | password 12341234
 
 3.github
 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
